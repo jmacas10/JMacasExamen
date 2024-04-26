@@ -15,7 +15,7 @@ FontSize="14"/>
           TextColor="Blue"
            FontSize="20"
   VerticalOptions="Center" 
-  HorizontalOptions="Center"/>
+  HorizontalOptions="Center" />
 
       
 
