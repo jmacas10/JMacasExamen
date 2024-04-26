@@ -120,7 +120,8 @@ FontSize="20"
     Margin="8"                
                   />
                 <Entry x:Name="txtpago"
-       Placeholder="Ingrese pago"
+       Placeholder="Su pago es"
+          IsReadOnly="True"             
    Grid.Row="5"
    Grid.Column="5"
                           Margin="8"
@@ -197,7 +198,8 @@ FontSize="20"
        Placeholder="Ingrese edad"
    Grid.Row="1"
    Grid.Column="2"
-                          Margin="8"
+    Margin="8"
+     
    />
             </Grid>
 

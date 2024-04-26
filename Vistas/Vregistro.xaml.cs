@@ -31,7 +31,7 @@ public partial class Vregistro : ContentPage
 
         txtpago.Text = cuotamensual.ToString();
 
-        resumendatos = new string[] { nombre, apellido };//,edad,fechaActual,ciudad,pais
+        resumendatos = new string[] { nombre, apellido, edad, fechaActual, ciudad, pais };
 
     }
 
