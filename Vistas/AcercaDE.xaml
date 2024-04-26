@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JMacasExamen.Vistas.AcercaDE"
+             Title="AcercaDE">
+    <VerticalStackLayout
+         Spacing="20"
+ Margin="25">
+
+
+        <Label 
+  Text="ACERCA DEL DESARROLLADOR DEL SISTEMA"
+                          
+          TextColor="BLUE"
+           FontSize="20"
+  VerticalOptions="Center" 
+  HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                    Text="NOMBRE"
+                     Grid.Row="1"
+    Grid.Column="0"
+    TextColor="Blue"
+    FontSize="20"
+       HorizontalTextAlignment="Center"
+                       Margin="8"
+                    />
+            <Label Text="Johnny Patricio Macas Chuchuca"
+    Grid.Row="1"
+ Grid.Column="1"
+       Margin="8"/>
+
+            <Label
+                Text="CICLO"
+                 Grid.Row="2"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+                       Margin="8"
+   HorizontalTextAlignment="Center"
+                />
+            <Label Text="7mo semestre A"
+   Grid.Row="2"
+   Grid.Column="2"
+                          Margin="8"/>
+
+            <Label
+                Text="CARRERA"
+                 Grid.Row="3"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+   HorizontalTextAlignment="Center"
+        Margin="8"           />
+            <Label Text="Ingenieria en Informatica"
+                          Margin="8"
+      
+   Grid.Row="3"
+   Grid.Column="3"
+                    />
+
+            <Label
+                Text="EXAMEN"
+                 Grid.Row="4"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+   HorizontalTextAlignment="Center"
+         Margin="8"          />
+            <Label Text="examen parcial momento 1"
+   Grid.Row="4"
+   Grid.Column="4"/>
+
+            <Label
+                Text="TEMA"
+                 Grid.Row="5"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+    Margin="8"                
+                  />
+            <Label Text="desarrollo de APP movil de registro de estudiantes"
+   Grid.Row="5"
+   Grid.Column="5"
+                          Margin="8"
+
+   />
+
+
+         
+
+
+        </Grid>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

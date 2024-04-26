@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JMacasExamen.Vistas.Vregistro"
+             Title="Vregistro">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+Margin="25">
+            <Label x:Name="lblUsuarioConectado"
+        HorizontalTextAlignment="End"   
+      FontSize="14"/>
+            <Label 
+  Text="REGISTRO"
+                          
+          TextColor="Blue"
+           FontSize="22"
+  VerticalOptions="Center" 
+  HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="FECHA"
+                     Grid.Row="1"
+    Grid.Column="0"
+    TextColor="Blue"
+    FontSize="20"
+       HorizontalTextAlignment="Center"
+                       Margin="8"
+                    />
+                <DatePicker x:Name="dpfechas" Date="04/12/2024"
+    Format="dd/mm/yyyy"
+    Grid.Row="1"
+ Grid.Column="1"
+       Margin="8"/>
+
+                <Label
+                Text="PAIS"
+                 Grid.Row="2"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+                       Margin="8"
+   HorizontalTextAlignment="Center"
+                />
+              
+
+                <Picker x:Name="pkPais" VerticalOptions="Start" 
+                        Grid.Row="2"
+                        Grid.Column="2" 
+                        Margin="8"
+                        >
+                    
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Peru</x:String>
+                        <x:String>Chile</x:String>
+                    </Picker.Items>
+                </Picker>
+
+              
+             
+
+                <Label
+                Text="CIUDAD"
+                 Grid.Row="3"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+   HorizontalTextAlignment="Center"
+        Margin="8"           />
+
+                <Picker x:Name="pkCiudad" VerticalOptions="Start" 
+                        Grid.Row="3"
+                        Grid.Column="3" 
+                         Margin="8" 
+                        >
+                    <Picker.Items>
+                        <x:String>Cuenca</x:String>
+                        <x:String>Guayaquil</x:String>
+                        <x:String>Ciudad</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label
+                Text="Monto Inicial"
+                 Grid.Row="4"
+                    
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+   HorizontalTextAlignment="Center"
+         Margin="8"          />
+                <Entry x:Name="txtmonto"
+       Placeholder="Ingrese Monto Inicial"
+   Grid.Row="4"
+   Grid.Column="4"/>
+
+                <Label
+                Text="Pago Mensual"
+                 Grid.Row="5"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+    Margin="8"                
+                  />
+                <Entry x:Name="txtpago"
+       Placeholder="Ingrese pago"
+   Grid.Row="5"
+   Grid.Column="5"
+                          Margin="8"
+   />
+            </Grid>
+
+            
+     
+
+            <!-- grid 2-->
+
+            <Grid Padding="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition />
+                 
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+
+
+                <Label
+                Text="Nombre"
+                 Grid.Row="0"
+Grid.Column="0"
+TextColor="Blue"
+FontSize="20"
+    Margin="8"                
+                  />
+                <Entry x:Name="txtnombre"
+       Placeholder="Ingrese nombre"
+   Grid.Row="1"
+   Grid.Column="0"
+                          Margin="8"
+   />
+
+
+
+
+                <Label
+                Text="Apellido"
+                 Grid.Row="0"
+Grid.Column="1"
+TextColor="Blue"
+FontSize="20"
+    Margin="8"                
+                  />
+                
+                <Entry x:Name="txtapellido"
+       Placeholder="Ingrese apellido"
+   Grid.Row="1"
+   Grid.Column="1"
+                          Margin="8"
+   />
+
+
+
+
+
+                <Label
+                Text="Edad"
+                 Grid.Row="0"
+Grid.Column="3"
+TextColor="Blue"
+FontSize="20"
+    Margin="8"                
+                  />
+
+                <Entry x:Name="txtedad"
+       Placeholder="Ingrese edad"
+   Grid.Row="1"
+   Grid.Column="2"
+                          Margin="8"
+   />
+            </Grid>
+
+
+            <!-- grid 3-->
+
+            <Grid Padding="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="1" Grid.Column="0" Text="CalcularPago" x:Name="calcularIngreso"
+   
+    BorderColor="Black"
+    BorderWidth="2"
+   Clicked="calcularIngreso_Clicked"
+    Margin="20"
+    StyleClass="login-button"
+   ImageSource="logout.png"  
+                        
+    
+/>
+
+                <Button Grid.Row="1" Grid.Column="1" Text="VerResumen" x:Name="resumen"
+   
+    BorderColor="Black"
+    BorderWidth="2"
+   Clicked="resumen_Clicked"
+    Margin="20"
+    StyleClass="login-button"
+   ImageSource="logout.png"  
+                        
+    
+/>
+
+
+            </Grid>
+
+
+
+        </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>

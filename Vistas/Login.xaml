@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JMacasExamen.Vistas.Login"
+             Title="Login">
+    <ScrollView>
+    <VerticalStackLayout
+        Spacing="20"
+        Margin="25"
+        >
+            <Label 
+  Text="INICIO SESION"
+                          
+          TextColor="Red"
+           FontSize="20"
+  VerticalOptions="Center" 
+  HorizontalOptions="Center" />
+
+            <Image x:Name="local"
+              Margin="10"
+     Source="uisraelexa.png"  
+       HeightRequest="120"
+       />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Icono del usuario -->
+                <Image x:Name="localLogin" Grid.Row="0" Grid.Column="1"
+  Source="ulogin.jpg"  
+    HeightRequest="150"
+                   
+    />
+
+                <!-- Icono del usuario -->
+                <Image Grid.Row="1" Grid.Column="0"  Source="user.png"  HeightRequest="25" HorizontalOptions="Center" />
+                <Label Text="Usuario"
+                    Grid.Row="1"
+                       Grid.Column="0"
+                       TextColor="Blue"
+                       FontSize="20"
+                      
+                        HorizontalTextAlignment="Center"
+                       
+                    />
+
+                    <Entry Placeholder=" Ingrese su usuario:"  Grid.Row="1" Grid.Column="1"  x:Name="txtUsuario"  Margin="10" />
+
+                <Image Grid.Row="2"  Grid.Column="0"  Source="passw.png"  HeightRequest="26" HorizontalOptions="Center" />
+                <Label Text="Contraseña"
+    Grid.Row="2"
+       Grid.Column="0"
+       TextColor="Blue"
+       FontSize="20"
+      
+        HorizontalTextAlignment="Center"
+       
+    />
+                <Entry Placeholder="Ingrese su contrasena: " IsPassword="True" Grid.Row="2"  Grid.Column="1" x:Name="txtContraseña" Margin="10" />
+
+                <Button Grid.Row="3" Grid.Column="0" Text="Iniciar sesión" x:Name="InicioSesion"
+                   
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Clicked="InicioSesion_Clicked"
+                    Margin="20"
+                    StyleClass="login-button"
+                   ImageSource="logout.png"          
+                />
+                <Button Grid.Row="3" Grid.Column="1" Text="Acerca De" x:Name="acercade"
+    
+     BorderColor="Black"
+     BorderWidth="2"
+     Clicked="acercade_Clicked"
+     Margin="20"
+     StyleClass="login-button"
+    ImageSource="logout.png"          
+ />
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>
