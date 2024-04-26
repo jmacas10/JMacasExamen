@@ -38,30 +38,33 @@ FontSize="14"/>
             <Label
                     Text="NOMBRE"
                      Grid.Row="1"
-    Grid.Column="0"
-    TextColor="Blue"
-    FontSize="20"
-       HorizontalTextAlignment="Center"
+                        Grid.Column="0"
+                        TextColor="Blue"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
                        Margin="8"
                     />
-            <Label Text=""
-    Grid.Row="1"
- Grid.Column="1"
-       Margin="8"/>
+            <Label 
+                x:Name="txtnombre"
+                Text=""
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="8"/>
 
             <Label
                 Text="APELLIDO"
                  Grid.Row="2"
-Grid.Column="0"
-TextColor="Blue"
-FontSize="20"
-                       Margin="8"
-   HorizontalTextAlignment="Center"
+                Grid.Column="0"
+                TextColor="Blue"
+                FontSize="20"
+                Margin="8"
+                HorizontalTextAlignment="Center"
                 />
-            <Label Text=""
-   Grid.Row="2"
-   Grid.Column="2"
-                          Margin="8"/>
+            <Label x:Name="txtApellido"
+                Text=""
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   Margin="8"/>
 
             <Label
                 Text="EDAD"
@@ -71,8 +74,8 @@ TextColor="Blue"
 FontSize="20"
    HorizontalTextAlignment="Center"
         Margin="8"           />
-            <Label Text=""
-                          Margin="8"
+        <Label x:Name="lbledad"
+          Margin="8"
       
    Grid.Row="3"
    Grid.Column="3"
@@ -86,7 +89,7 @@ TextColor="Blue"
 FontSize="20"
    HorizontalTextAlignment="Center"
          Margin="8"          />
-            <Label Text=""
+            <Label x:Name="lblfecha"
    Grid.Row="4"
    Grid.Column="4"/>
 
@@ -98,7 +101,7 @@ TextColor="Blue"
 FontSize="20"
     Margin="8"                
                   />
-            <Label 
+            <Label x:Name="lblciudad"
    Grid.Row="5"
    Grid.Column="5"
                           Margin="8"

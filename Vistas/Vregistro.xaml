@@ -37,10 +37,10 @@ Margin="25">
                 <Label
                     Text="FECHA"
                      Grid.Row="1"
-    Grid.Column="0"
-    TextColor="Blue"
-    FontSize="20"
-       HorizontalTextAlignment="Center"
+                    Grid.Column="0"
+                    TextColor="Blue"
+                    FontSize="20"
+                     HorizontalTextAlignment="Center"
                        Margin="8"
                     />
                 <DatePicker x:Name="dpfechas" Date="04/12/2024"
@@ -68,7 +68,7 @@ FontSize="20"
                     
                     <Picker.Items>
                         <x:String>Ecuador</x:String>
-                        <x:String>Peru</x:String>
+                        <x:String>Colombia</x:String>
                         <x:String>Chile</x:String>
                     </Picker.Items>
                 </Picker>
@@ -93,7 +93,7 @@ FontSize="20"
                     <Picker.Items>
                         <x:String>Cuenca</x:String>
                         <x:String>Guayaquil</x:String>
-                        <x:String>Ciudad</x:String>
+                        <x:String>Quito</x:String>
                     </Picker.Items>
                 </Picker>
 
